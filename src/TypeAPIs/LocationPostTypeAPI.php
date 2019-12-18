@@ -1,6 +1,7 @@
 <?php
 namespace PoP\LocationPostsWP\TypeAPIs;
 
+use function get_post;
 use WP_Post;
 use PoP\LocationPosts\TypeAPIs\LocationPostTypeAPIInterface;
 /**
@@ -17,5 +18,31 @@ class LocationPostTypeAPI implements LocationPostTypeAPIInterface
     public function isInstanceOfLocationPostType($object): bool
     {
         return ($object instanceof WP_Post) && $object->post_type == \POP_LOCATIONPOSTS_POSTTYPE_LOCATIONPOST;
+    }
+
+    /**
+     * Get the locationPost with provided ID or, if it doesn't exist, null
+     *
+     * @param [type] $id
+     * @return void
+     */
+    public function getLocationPost($id)
+    {
+        $post = get_post($id);
+        if (!$post || $post->post_type != \POP_LOCATIONPOSTS_POSTTYPE_LOCATIONPOST) {
+            return null;
+        }
+        return $post;
+    }
+
+    /**
+     * Indicate if an locationPost with provided ID exists
+     *
+     * @param [type] $id
+     * @return void
+     */
+    public function locationPostExists($id): bool
+    {
+        return $this->getLocationPost($id) != null;
     }
 }
