@@ -1,13 +1,14 @@
 <?php
 namespace PoP\LocationPostsWP\TypeAPIs;
 
-use function get_post;
 use WP_Post;
+use function get_post;
+use PoP\PostsWP\TypeAPIs\PostTypeAPI;
 use PoP\LocationPosts\TypeAPIs\LocationPostTypeAPIInterface;
 /**
  * Methods to interact with the Type, to be implemented by the underlying CMS
  */
-class LocationPostTypeAPI implements LocationPostTypeAPIInterface
+class LocationPostTypeAPI extends PostTypeAPI implements LocationPostTypeAPIInterface
 {
     /**
      * Indicates if the passed object is of type LocationPost
@@ -44,5 +45,16 @@ class LocationPostTypeAPI implements LocationPostTypeAPIInterface
     public function locationPostExists($id): bool
     {
         return $this->getLocationPost($id) != null;
+    }
+
+    public function getLocationPosts($query, array $options = [])
+    {
+        return $this->getPosts($query, $options);
+    }
+    protected function convertPostsQuery($query, array $options = [])
+    {
+        $query = parent::convertPostsQuery($query, $options);
+        $query['post_type'] = array(\POP_LOCATIONPOSTS_POSTTYPE_LOCATIONPOST);
+        return $query;
     }
 }
