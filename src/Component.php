@@ -3,6 +3,7 @@ namespace PoP\LocationPostsWP;
 
 use PoP\Root\Component\AbstractComponent;
 use PoP\Root\Component\YAMLServicesTrait;
+use PoP\LocationPostsWP\Config\ServiceConfiguration;
 
 /**
  * Initialize component
@@ -19,5 +20,6 @@ class Component extends AbstractComponent
     {
         parent::init();
         self::initYAMLServices(dirname(__DIR__));
+        ServiceConfiguration::init();
     }
 }
