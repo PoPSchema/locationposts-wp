@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace PoP\LocationPostsWP\TypeResolverPickers\Overrides;
 
 use PoP\PostsWP\TypeResolverPickers\ContentEntityTypeResolverPickerInterface;
