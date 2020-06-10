@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace PoP\LocationPostsWP\TypeResolverPickers\Overrides;
 
-use PoP\PostsWP\TypeResolverPickers\ContentEntityTypeResolverPickerInterface;
+use PoP\ContentWP\TypeResolverPickers\ContentEntityTypeResolverPickerInterface;
 use PoP\PostsWP\TypeResolverPickers\NoCastContentEntityTypeResolverPickerTrait;
 
 class LocationPostContentEntityTypeResolverPicker extends \PoP\LocationPosts\TypeResolverPickers\Optional\LocationPostContentEntityTypeResolverPicker implements ContentEntityTypeResolverPickerInterface
