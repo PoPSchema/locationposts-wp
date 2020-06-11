@@ -16,8 +16,8 @@ class ServiceConfiguration
         ContainerBuilderUtils::injectValuesIntoService(
             'instance_manager',
             'overrideClass',
-            \PoP\LocationPosts\TypeResolverPickers\Optional\LocationPostContentEntityTypeResolverPicker::class,
-            \PoP\LocationPostsWP\TypeResolverPickers\Overrides\LocationPostContentEntityTypeResolverPicker::class
+            \PoP\LocationPosts\TypeResolverPickers\Optional\LocationPostCustomPostTypeResolverPicker::class,
+            \PoP\LocationPostsWP\TypeResolverPickers\Overrides\LocationPostCustomPostTypeResolverPicker::class
         );
     }
 }
