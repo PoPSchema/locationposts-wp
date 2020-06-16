@@ -11,7 +11,7 @@ class LocationPostCustomPostTypeResolverPicker extends \PoP\LocationPosts\TypeRe
 {
     use NoCastCustomPostTypeResolverPickerTrait;
 
-    public function getPostType(): string
+    public function getCustomPostType(): string
     {
         return \POP_LOCATIONPOSTS_POSTTYPE_LOCATIONPOST;
     }
