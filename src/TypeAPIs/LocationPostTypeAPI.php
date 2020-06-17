@@ -8,6 +8,7 @@ use WP_Post;
 use function get_post;
 use PoP\PostsWP\TypeAPIs\PostTypeAPI;
 use PoP\LocationPosts\TypeAPIs\LocationPostTypeAPIInterface;
+
 /**
  * Methods to interact with the Type, to be implemented by the underlying CMS
  */
