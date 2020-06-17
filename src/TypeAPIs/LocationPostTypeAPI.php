@@ -6,13 +6,12 @@ namespace PoP\LocationPostsWP\TypeAPIs;
 
 use WP_Post;
 use function get_post;
-use PoP\CustomPostsWP\TypeAPIs\CustomPostTypeAPI;
+use PoP\PostsWP\TypeAPIs\PostTypeAPI;
 use PoP\LocationPosts\TypeAPIs\LocationPostTypeAPIInterface;
-
 /**
  * Methods to interact with the Type, to be implemented by the underlying CMS
  */
-class LocationPostTypeAPI extends CustomPostTypeAPI implements LocationPostTypeAPIInterface
+class LocationPostTypeAPI extends PostTypeAPI implements LocationPostTypeAPIInterface
 {
     /**
      * Indicates if the passed object is of type LocationPost
