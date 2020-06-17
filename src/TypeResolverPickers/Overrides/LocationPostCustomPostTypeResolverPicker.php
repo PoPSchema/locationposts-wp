@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace PoP\LocationPostsWP\TypeResolverPickers\Overrides;
 
 use PoP\CustomPostsWP\TypeResolverPickers\CustomPostTypeResolverPickerInterface;
-use PoP\PostsWP\TypeResolverPickers\NoCastCustomPostTypeResolverPickerTrait;
+use PoP\CustomPostsWP\TypeResolverPickers\NoCastCustomPostTypeResolverPickerTrait;
 
 class LocationPostCustomPostTypeResolverPicker extends \PoP\LocationPosts\TypeResolverPickers\Optional\LocationPostCustomPostTypeResolverPicker implements CustomPostTypeResolverPickerInterface
 {
