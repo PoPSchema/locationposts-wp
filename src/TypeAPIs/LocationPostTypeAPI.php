@@ -55,9 +55,9 @@ class LocationPostTypeAPI extends PostTypeAPI implements LocationPostTypeAPIInte
     {
         return $this->getPosts($query, $options);
     }
-    protected function convertPostsQuery($query, array $options = []): array
+    protected function convertCustomPostsQuery($query, array $options = []): array
     {
-        $query = parent::convertPostsQuery($query, $options);
+        $query = parent::convertCustomPostsQuery($query, $options);
         $query['post_type'] = array(\POP_LOCATIONPOSTS_POSTTYPE_LOCATIONPOST);
         return $query;
     }
