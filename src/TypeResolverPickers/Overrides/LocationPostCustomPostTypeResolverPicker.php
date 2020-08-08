@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PoP\LocationPostsWP\TypeResolverPickers\Overrides;
+namespace PoPSchema\LocationPostsWP\TypeResolverPickers\Overrides;
 
-use PoP\CustomPostsWP\TypeResolverPickers\CustomPostTypeResolverPickerInterface;
-use PoP\CustomPostsWP\TypeResolverPickers\NoCastCustomPostTypeResolverPickerTrait;
+use PoPSchema\CustomPostsWP\TypeResolverPickers\CustomPostTypeResolverPickerInterface;
+use PoPSchema\CustomPostsWP\TypeResolverPickers\NoCastCustomPostTypeResolverPickerTrait;
 
-class LocationPostCustomPostTypeResolverPicker extends \PoP\LocationPosts\TypeResolverPickers\Optional\LocationPostCustomPostTypeResolverPicker implements CustomPostTypeResolverPickerInterface
+class LocationPostCustomPostTypeResolverPicker extends \PoPSchema\LocationPosts\TypeResolverPickers\Optional\LocationPostCustomPostTypeResolverPicker implements CustomPostTypeResolverPickerInterface
 {
     use NoCastCustomPostTypeResolverPickerTrait;
 

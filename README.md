@@ -17,7 +17,7 @@ Implementation for WordPress of contracts from package "LocationPosts"
 Via Composer
 
 ``` bash
-composer require getpop/locationposts-wp
+composer require pop-schema/locationposts-wp
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ Initialize the component:
 
 ``` php
 \PoP\Root\ComponentLoader::initializeComponents([
-    \PoP\LocationPostsWP\Component::class,
+    \PoPSchema\LocationPostsWP\Component::class,
 ]);
 ```
 
@@ -61,17 +61,17 @@ If you discover any security related issues, please email leo@getpop.org instead
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/getpop/locationposts-wp.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/pop-schema/locationposts-wp.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/getpop/locationposts-wp/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/getpop/locationposts-wp.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/getpop/locationposts-wp.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/getpop/locationposts-wp.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/pop-schema/locationposts-wp/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/pop-schema/locationposts-wp.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/pop-schema/locationposts-wp.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/pop-schema/locationposts-wp.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/getpop/locationposts-wp
-[link-travis]: https://travis-ci.org/getpop/locationposts-wp
-[link-scrutinizer]: https://scrutinizer-ci.com/g/getpop/locationposts-wp/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/getpop/locationposts-wp
-[link-downloads]: https://packagist.org/packages/getpop/locationposts-wp
+[link-packagist]: https://packagist.org/packages/pop-schema/locationposts-wp
+[link-travis]: https://travis-ci.org/pop-schema/locationposts-wp
+[link-scrutinizer]: https://scrutinizer-ci.com/g/pop-schema/locationposts-wp/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/pop-schema/locationposts-wp
+[link-downloads]: https://packagist.org/packages/pop-schema/locationposts-wp
 [link-author]: https://github.com/leoloso
 [link-contributors]: ../../contributors

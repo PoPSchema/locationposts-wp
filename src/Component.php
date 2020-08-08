@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace PoP\LocationPostsWP;
+namespace PoPSchema\LocationPostsWP;
 
 use PoP\Root\Component\AbstractComponent;
 use PoP\Root\Component\YAMLServicesTrait;
-use PoP\LocationPostsWP\Config\ServiceConfiguration;
+use PoPSchema\LocationPostsWP\Config\ServiceConfiguration;
 
 /**
  * Initialize component
@@ -19,8 +19,8 @@ class Component extends AbstractComponent
     public static function getDependedComponentClasses(): array
     {
         return [
-            \PoP\LocationPosts\Component::class,
-            \PoP\PostsWP\Component::class,
+            \PoPSchema\LocationPosts\Component::class,
+            \PoPSchema\PostsWP\Component::class,
         ];
     }
 

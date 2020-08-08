@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PoP\LocationPostsWP\TypeAPIs;
+namespace PoPSchema\LocationPostsWP\TypeAPIs;
 
 use WP_Post;
 use function get_post;
-use PoP\PostsWP\TypeAPIs\PostTypeAPI;
-use PoP\LocationPosts\TypeAPIs\LocationPostTypeAPIInterface;
+use PoPSchema\PostsWP\TypeAPIs\PostTypeAPI;
+use PoPSchema\LocationPosts\TypeAPIs\LocationPostTypeAPIInterface;
 
 /**
  * Methods to interact with the Type, to be implemented by the underlying CMS
