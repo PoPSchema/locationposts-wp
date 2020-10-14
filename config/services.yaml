@@ -1,4 +1,4 @@
 services:
-    locationpost_type_api:
+    PoPSchema\LocationPosts\TypeAPIs\LocationPostTypeAPIInterface:
         class: \PoPSchema\LocationPostsWP\TypeAPIs\LocationPostTypeAPI
         public: true
